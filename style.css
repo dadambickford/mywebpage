@@ -92,24 +92,23 @@ h3 {
   background: url("images/tw_icon.png") no-repeat;
 }
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) { 
+@media screen and (max-width: 480px) {
+    body {
+      padding:10px;
+    }
+    #container {
+      position:static;
+      margin:200px 0 40px 0;
+      width:100%;
+      font-size:60%;
+    }
 
-html {
-  background: url("images/pdx_bg_480.jpg") no-repeat center center fixed;
-  
-  -webkit-background-size:cover;
-  -moz-background-size:cover;
-  -o-background-size:cover;
-  background-size:cover;
+    #nav {
+      top:10px;
+      left:50px;
+    }
+
+    #nav a {
+      background-position:0 -40px;
+    }
 }
-
-#container {
-  position:absolute;
-  bottom:40px;
-  left:20px;
-}
-
-#nav a {
-  background-position:0 -40px;
-
-} /*end small css */
