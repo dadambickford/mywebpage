@@ -22,6 +22,8 @@ html {
   background-size:cover;
 }
 
+} /*end normal css */
+
 body {
   font-family: TrajanPro, times, verdana;
   color:black;
@@ -89,8 +91,6 @@ h3 {
 .twitter {
   background: url("images/tw_icon.png") no-repeat;
 }
-
-} /*end normal css */
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) { 
 
