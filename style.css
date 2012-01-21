@@ -93,13 +93,17 @@ h3 {
     }
     #container {
       position:static;
-      margin:20px auto;
+      margin:200px 0 40px 0;
       width:100%;
       font-size:60%;
     }
 
-    #nav{
+    #nav {
       top:10px;
-      left:10px;
+      left:50px;
+    }
+
+    #nav a {
+      background-position:0 -40px;
     }
 }
