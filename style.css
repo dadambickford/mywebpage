@@ -26,6 +26,8 @@ body {
 #container {
   height:135px;
   width:585px;
+  position:absolute;
+  bottom:150px;
   float:left;
   margin:500px 0 0 35px;
   background:white;
