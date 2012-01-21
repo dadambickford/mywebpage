@@ -1,3 +1,5 @@
+/* my own personal website style*/
+
 @font-face {
     font-family: 'TrajanPro';
     src: url('fonts/trajanpro-regular-webfont.eot');
@@ -28,10 +30,9 @@ body {
   width:585px;
   position:absolute;
   bottom:150px;
-  float:left;
-  margin:500px 0 0 35px;
+  left:20px;
   background:white;
-  border:transparent;
+  border:white;
   border-radius:50px;
 }
 
