@@ -86,3 +86,20 @@ h3 {
 .twitter {
   background: url("images/tw_icon.png") no-repeat;
 }
+
+@media screen and (max-width: 480px) {
+    body {
+      padding:10px;
+    }
+    #container {
+      position:static;
+      margin:20px auto;
+      width:100%;
+      font-size:60%;
+    }
+
+    #nav{
+      top:10px;
+      left:10px;
+    }
+}
