@@ -13,7 +13,7 @@
 }
 
 html {
-  background: url("../images/pdx_bg_1024.jpg") no-repeat center center fixed;
+  background: url("../images/pdx_bg_480.jpg") no-repeat center center fixed;
   -webkit-background-size:cover;
   -moz-background-size:cover;
   -o-background-size:cover;
@@ -23,18 +23,20 @@ html {
 body {
   font-family: TrajanPro, times, verdana;
   color:black;
+  padding: 10px;
 }
 
 #container {
   height:135px;
-  width:585px;
+  width:100%;
   position:absolute;
-  bottom:150px;
-  left:20px;
+  bottom:40px;
   background:white;
   border:white;
   border-radius:50px;
+  font-size:60%;
 }
+
 
 h1 {
   font-size:4em;
@@ -55,7 +57,7 @@ h3 {
   width:194px;
   background:white;
   position:relative;
-  left:355px;
+  left:50px;
   top:-30px;
   border:1px solid gray;
   border-radius:25px;
@@ -70,9 +72,6 @@ h3 {
   margin:5px 12px;
   height:40px;
   width:40px;
-}
-
-#nav a:hover {
   background-position:0 -40px;
 }
 
@@ -86,23 +85,5 @@ h3 {
 
 .twitter {
   background: url("../images/tw_icon.png") no-repeat;
-
-}
-
-@media screen and (max-width: 480px) {
-    body {
-      padding:10px;
-    }
-    #container {
-      position:static;
-      margin:200px 0 40px 0;
-      width:100%;
-      font-size:60%;
-    }
-
-    #nav {
-      top:10px;
-      left:50px;
-    }
 
 }
