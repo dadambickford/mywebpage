@@ -29,7 +29,7 @@ body {
 }
 
 #container {
-  height:130px;
+  height:115px;
   width:100%;
   position:absolute;
   bottom:20px;
@@ -41,16 +41,17 @@ body {
 
 
 h1 {
-  font-size:4em;
+  font-size:5em;
   padding:15px 0 0 15px;
 }
 
 h2 {
-  font-size:1.5em;
+  font-size:2em;
   padding:3px 0 0 25px;
 }
 
 h3 {
+  font-size:1.5em;
   padding:3px 0 0 55px;
 }
 
@@ -59,7 +60,7 @@ h3 {
   width:194px;
   background:white;
   position:relative;
-  left:50px;
+  left:100px;
   top:-30px;
   border:1px solid white;
   border-radius:25px;
