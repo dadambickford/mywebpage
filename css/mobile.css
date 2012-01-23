@@ -55,18 +55,37 @@ h3 {
   padding:3px 0 0 55px;
 }
 
-#nav {
-  height:50px;
-  width:194px;
-  background:white;
-  position:relative;
-  left:100px;
-  top:-30px;
-  border:1px solid white;
-  border-radius:25px;
-  -webkit-box-shadow: -4px -4px 5px 0 rgba(0, 0, 0, .3);
-  -moz-box-shadow: -4px -4px 5px 0 rgba(0, 0, 0, .3);     
-  box-shadow: -4px -4px 5px 0 rgba(0, 0, 0, .3);
+
+@media all and (orientation:landscape) {
+  #nav {
+    height:50px;
+    width:194px;
+    background:white;
+    position:relative;
+    left:300px;
+    top:-30px;
+    border:1px solid white;
+    border-radius:25px;
+    -webkit-box-shadow: -4px -4px 5px 0 rgba(0, 0, 0, .3);
+    -moz-box-shadow: -4px -4px 5px 0 rgba(0, 0, 0, .3);     
+    box-shadow: -4px -4px 5px 0 rgba(0, 0, 0, .3);
+  }
+}
+
+@media all and (orientation:portrait) {
+  #nav {
+    height:50px;
+    width:194px;
+    background:white;
+    position:relative;
+    left:100px;
+    top:-30px;
+    border:1px solid white;
+    border-radius:25px;
+    -webkit-box-shadow: -4px -4px 5px 0 rgba(0, 0, 0, .3);
+    -moz-box-shadow: -4px -4px 5px 0 rgba(0, 0, 0, .3);     
+    box-shadow: -4px -4px 5px 0 rgba(0, 0, 0, .3);
+  }
 }
 
 #nav a {
