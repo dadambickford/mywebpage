@@ -24,10 +24,12 @@ body {
   font-family: TrajanPro, times, verdana;
   color:black;
   padding: 10px;
+  height:100%;
+  width:100%;
 }
 
 #container {
-  height:135px;
+  height:50%;
   width:100%;
   position:absolute;
   bottom:40px;
