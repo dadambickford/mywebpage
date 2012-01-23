@@ -29,10 +29,10 @@ body {
 }
 
 #container {
-  height:50%;
+  height:130px;
   width:100%;
   position:absolute;
-  bottom:40px;
+  bottom:20px;
   background:white;
   border:white;
   border-radius:50px;
@@ -61,7 +61,7 @@ h3 {
   position:relative;
   left:50px;
   top:-30px;
-  border:1px solid gray;
+  border:1px solid white;
   border-radius:25px;
   -webkit-box-shadow: -4px -4px 5px 0 rgba(0, 0, 0, .3);
   -moz-box-shadow: -4px -4px 5px 0 rgba(0, 0, 0, .3);     
