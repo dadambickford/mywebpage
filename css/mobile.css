@@ -40,10 +40,7 @@ h2 {
   padding:3px 0 0 25px;
 }
 
-h3 {
-  font-size:1.5em;
-  padding:3px 0 0 55px;
-}
+
 
 @media all and (orientation:landscape) {
   #container {
@@ -55,6 +52,11 @@ h3 {
     border:white;
     border-radius:50px;
     font-size:60%;
+  }
+
+  h3 {
+    font-size:1.5em;
+    padding:3px 0 0 55px;
   }
 
   #nav {
@@ -82,6 +84,11 @@ h3 {
     border:white;
     border-radius:50px;
     font-size:60%;
+  }
+
+  h3 {
+    font-size:1.5em;
+    padding:3px 0 0 35px;
   }
 
   #nav {
