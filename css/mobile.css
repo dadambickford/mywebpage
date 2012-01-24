@@ -76,10 +76,10 @@ h3 {
 
 @media all and (orientation:portrait) {
   #container {
-    height:140px;
+    height:160px;
     width:90%;
     position:absolute;
-    bottom:100px;
+    bottom:150px;
     background:white;
     border:white;
     border-radius:50px;
