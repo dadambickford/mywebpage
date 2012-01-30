@@ -56,7 +56,14 @@ h2 {
 
   h3 {
     font-size:1.5em;
-    padding:3px 0 0 55px;
+    padding:3px 0 0 40px;
+  }
+
+  a.email {
+    float:right;
+    position:relative;
+    top:-46px;
+    left:-25px;
   }
 
   #nav {
