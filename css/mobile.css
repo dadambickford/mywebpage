@@ -76,7 +76,7 @@ h2 {
     width:194px;
     background:white;
     position:relative;
-    left:300px;
+    left:310px;
     top:-22px;
     border:1px solid white;
     border-radius:25px;
@@ -88,10 +88,10 @@ h2 {
 
 @media all and (orientation:portrait) {
   #container {
-    height:160px;
+    height:175px;
     width:90%;
     position:absolute;
-    bottom:90px;
+    bottom:100px;
     background:white;
     border:white;
     border-radius:50px;
@@ -100,7 +100,7 @@ h2 {
 
   h3 {
     font-size:1.5em;
-    padding:3px 0 0 35px;
+    padding:3px 0 0 25px;
   }
 
   #nav {
