@@ -43,8 +43,8 @@ h2 {
 
 
 @media all and (orientation:landscape) {
-  body {
-    width:100%;
+  body,html {
+    max-width:100%;
   }
 
   #container {
@@ -87,11 +87,15 @@ h2 {
 }
 
 @media all and (orientation:portrait) {
+  body,html {
+    max-width:100%;
+  }
+
   #container {
     height:175px;
     width:90%;
     position:absolute;
-    bottom:100px;
+    bottom:90px;
     background:white;
     border:white;
     border-radius:50px;
@@ -105,7 +109,7 @@ h2 {
 
   a.email {
     float:right;
-    font-size:1.2em;
+    font-size:1.3em;
   }
 
   #nav {
