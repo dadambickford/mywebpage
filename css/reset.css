@@ -23,8 +23,8 @@ a {
 	color: black;
 }
 a:hover {
-	text-decoration:none;
-	color: white;
+	text-decoration:underline;
+	color: gray;
 }
 ol, ul {
 	list-style: none;
