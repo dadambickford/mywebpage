@@ -30,6 +30,11 @@ body {
   width:100%;
 }
 
+#container {
+  height:100%;
+  width:100%;
+}
+
 h1 {
   font-size:5em;
   padding:15px 0 0 15px;
@@ -47,7 +52,7 @@ h2 {
     max-width:100%;
   }
 
-  #container {
+  #main {
     height:115px;
     width:90%;
     position:absolute;
@@ -91,7 +96,7 @@ h2 {
     max-width:100%;
   }
 
-  #container {
+  #main {
     height:175px;
     width:90%;
     position:absolute;
