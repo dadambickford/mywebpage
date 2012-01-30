@@ -109,6 +109,9 @@ h2 {
 
   a.email {
     float:right;
+    position:relative;
+    top:-20px;
+    left:-20px;
     font-size:1.3em;
   }
 
