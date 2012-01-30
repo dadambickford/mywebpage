@@ -103,6 +103,11 @@ h2 {
     padding:3px 0 0 25px;
   }
 
+  a.email {
+    float:right;
+    font-size:1.2em;
+  }
+
   #nav {
     height:50px;
     width:194px;
