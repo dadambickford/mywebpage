@@ -55,21 +55,14 @@ h3 {
   padding:3px 0 0 45px;
 }
 
-a.email {
-  float:right;
-  position:relative;
-  top:-46px;
-  left:-25px;
-  font-size:.8em;
-}
-
 #nav {
   height:50px;
-  width:194px;
+  width:200px;
   background:white;
   position:relative;
   left:360px;
   top:-30px;
+  padding-left:6px;
   border:1px solid gray;
   border-radius:25px;
   -webkit-box-shadow: -4px -4px 5px 0 rgba(0, 0, 0, .3);
@@ -80,7 +73,7 @@ a.email {
 #nav a {
   float:left;
   display: block;
-  margin:5px 12px;
+  margin:5px 4px;
   height:40px;
   width:40px;
 }
@@ -99,7 +92,10 @@ a.email {
 
 .twitter {
   background: url("../images/tw_icon.png") no-repeat;
+}
 
+.email {
+  background: url("../images/gm_icon.png") no-repeat;
 }
 
 @media screen and (max-width: 480px) {
