@@ -89,12 +89,12 @@ h2 {
 
   h2 {
     position:relative;
-    left:-20px;
+    left:-10px;
   }
 
   h3 {
     font-size:1.5em;
-    padding:3px 0 0 25px;
+    padding:3px 0 0 15px;
   }
 
   #nav {
@@ -103,7 +103,6 @@ h2 {
     background:white;
     position:relative;
     left:90px;
-    top:-5px;
     padding-left:6px;
     border:1px solid white;
     border-radius:25px;
