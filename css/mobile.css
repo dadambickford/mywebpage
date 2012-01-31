@@ -43,15 +43,6 @@ h2 {
 
 
 @media all and (orientation:landscape) {
-  body,html {
-    max-width:75%;
-  }
-
-  #container {
-    height:100%;
-    width:75%;
-  }
-
   #main {
     height:115px;
     width:90%;
@@ -66,14 +57,6 @@ h2 {
   h3 {
     font-size:1.5em;
     padding:3px 0 0 30px;
-  }
-
-  a.email {
-    float:right;
-    position:relative;
-    top:-40px;
-    left:-35px;
-    font-size:1.2em;
   }
 
   #nav {
@@ -92,15 +75,6 @@ h2 {
 }
 
 @media all and (orientation:portrait) {
-  body,html {
-    max-width:100%;
-  }
-
-  #container {
-    height:100%;
-    width:75%;
-  }
-
   #main {
     height:175px;
     width:90%;
@@ -120,14 +94,6 @@ h2 {
   h3 {
     font-size:1.5em;
     padding:3px 0 0 25px;
-  }
-
-  a.email {
-    float:right;
-    position:absolute;
-    bottom:10px;
-    right:24px;
-    font-size:1.3em;
   }
 
   #nav {
@@ -164,5 +130,8 @@ h2 {
 
 .twitter {
   background: url("../images/tw_icon.png") no-repeat;
+}
 
+.email {
+  background: url("../images/gm_icon.png") no-repeat;
 }
