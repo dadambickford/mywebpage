@@ -55,6 +55,10 @@ h3 {
   padding:3px 0 0 45px;
 }
 
+.resume {
+  text-decoration:underline;
+}
+
 #nav {
   height:50px;
   width:200px;
