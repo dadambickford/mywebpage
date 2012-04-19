@@ -30,7 +30,7 @@
   <div id="main">
   <h1>Adam Bickford</h1>
   <h2>I make kick-ass <a href="" class="portfolio" title="check out my Portfolio!">websites</a>.</h2>
-  <h3>HTML/CSS/JS/jQuery/Git/<span class="resume-link">Resume</span></h3>
+  <h3>HTML/CSS/JS/jQuery/Git/<span class="resume-link" title="check out my Resume!">resume</span></h3>
     <div id="nav">
       <a href="http://facebook.com/adamGbickford" title="Contact me on Facebook!" class="facebook"></a>
       <a href="https://github.com/dadambickford" title="Contact me on Github!" class="github"></a>
@@ -38,25 +38,103 @@
       <a href="mailto:Adam@Adambickford.net" title="Contact me via E-mail!" class ="email"></a>
     </div><!--end nav-->
   </div><!--end main-->
-  <div id="resume"></div>
+  <div id="resume">
+    <span class="resume-exit">X</span>
+    <h1 class="header1">Adam Bickford</h1>
+    <p class="head">240 E Gloucester - Gladstone, OR 97027</p>
+    <p class="head">(971) 340-7422 (cell) - adam@adambickford.net</p><br />
+    <hr>
+    <p><strong>Seeking a junior position in a company that will give me challenging and diverse obstacles, allowing me to utilize and further my skills in web development and design.</strong></p>
+    <br />
+
+    <p class="title expand">WORK EXPERIENCE <span class="plus">-</span></p>
+    <p class="work"><br /><span class="title">Adam Bickford Web Development:</span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2011 - Present</span></p>
+    <ul class="work">
+      <li>Designed company websites using HTML and CSS.</li>
+      <li>Developed web applications using JavaScript.</li>
+      <li>Used Git and GitHub for version control.</li>
+      <li>Gained experience with IE bug hunting and common fixes.</li>
+      <li>Furthered skills in HTML5, CSS3, jQuery, and JavaScript.</li>
+    </ul><br />
+    <p class="work"><span class="title">MEMC:</span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Feb. 2011 - Dec. 2011&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Portland, Or.</span></p>
+    <ul class="work">
+      <p class="italic">Furnace Turn Team Member</p>
+      <li>Performed regular maintenance and mechanical work on solar furnaces.</li>
+      <li>Trained as a Super User on our data tracking software.</li>
+      <li>Worked with my team to match work with precise instructions and techinical drawings.</li>
+      <li>Adhered to strict guidelines for working with hazardous chemicals.</li>
+      <li>Trained and certified to work in a class 10,000 clean room.</li><br />
+    </ul>
+
+    <p class="title expand">EDUCATION <span class="plus">+</span></p>
+    <ul class="edu">
+      <br /><p>- Gladstone High School&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="italic">Gladstone, OR</span></p>
+      <br />
+      <li>Completed Adv. Graphic Design, 4 years.</li>
+      <li>Built websites for my band, and my friends.</li>
+      <li>Built PC's in Computer Tech. 2 years.</li>
+      <br />
+      <p>- Web Based Education</p>
+      <br />
+      <li>100% JavaScript course and project completion on CodeAcademy.com.</li>
+      <li>Completed the "30 Days to Learn jQuery" course on Tuts+ Premium, with Jeffrey Way.</li>
+    </ul><br />
+
+    <p class="title expand">PROFESSIONAL CONTACTS <span class="plus">+</span></p>
+    <ul class="contact">
+      <br /><p class="title bold">References Available Upon Request.</p>
+      <br /><p class="title bold">P.S. +</p>
+      <p>I am Trade Act Certified! Meaning that if you hire me as an On-The-Job Trainee,</p>
+      <p>The Trade Act will:</p>
+      <li>reimburse you 50% of my wages for up to two years.</li>
+      <li>help cover costs if I need to relocate to work for you.</li>
+    </ul><br />
+  </div>
 </div><!--end container-->
 
 
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 <script>
-  var resumeDiv = $('#resume');
+  $(".edu, .contact, #resume").hide();
 
-  //resumeDiv.hide()
-  resumeDiv.load('resume-copy.html');
-  /*$('.resume-link').toggle(
-  function () {
-    mainTitle.fadeOut();
+  var expand = $(".expand"),
+      plus = $("span.plus"),
+      work = $(".work"),
+      edu = $(".edu"),
+      contact = $(".contact"),
+      main = $("#main"),
+      resumeDiv = $("#resume"),
+      resumeLink = $(".resume-link"),
+      resumeExit = $(".resume-exit");
+
+  var mySlide = function(expand, plus, content, other1, other2, plus2, plus3){
+    expand.on('click', function(){
+      content.slideDown();
+      plus.text('-');
+      plus2.text('+');
+      plus3.text('+');
+      other1.slideUp();
+      other2.slideUp();
+    })
+  }
+
+  mySlide(expand.eq(0), plus.eq(0), work, edu, contact, plus.eq(1), plus.eq(2));
+
+  mySlide(expand.eq(1), plus.eq(1), edu, work, contact, plus.eq(0), plus.eq(2));
+
+  mySlide(expand.eq(2), plus.eq(2), contact, work, edu, plus.eq(0), plus.eq(1));
+
+  resumeLink.on('click', function(){
+    main.fadeOut();
     resumeDiv.fadeIn();
-  },
-  function () {
+  })
+
+  resumeExit.on('click', function(){
     resumeDiv.fadeOut();
-    mainTitle.fadeIn();
-  });*/
+    main.fadeIn();
+  })
+
+
 </script>
 
 </body>
