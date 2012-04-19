@@ -23,6 +23,7 @@ html {
 body {
   font-family: TrajanPro, times, verdana;
   color:black;
+  overflow:hidden;
 }
 
 #container {
@@ -55,7 +56,7 @@ h3 {
   padding:3px 0 0 45px;
 }
 
-.resume {
+.resume, .portfolio {
   text-decoration:underline;
 }
 
