@@ -30,7 +30,7 @@
   <div id="main">
   <h1>Adam Bickford</h1>
   <h2>I make kick-ass <a href="" class="portfolio" title="check out my Portfolio!">websites</a>.</h2>
-  <h3>HTML/CSS/JS/jQuery/Git/<a href="resume.html" title="Check out my resume!" class="resume">Resume</a></h3>
+  <h3>HTML/CSS/JS/jQuery/Git/<span class="resume-link">Resume</span></h3>
     <div id="nav">
       <a href="http://facebook.com/adamGbickford" title="Contact me on Facebook!" class="facebook"></a>
       <a href="https://github.com/dadambickford" title="Contact me on Github!" class="github"></a>
@@ -38,7 +38,26 @@
       <a href="mailto:Adam@Adambickford.net" title="Contact me via E-mail!" class ="email"></a>
     </div><!--end nav-->
   </div><!--end main-->
+  <div id="resume"></div>
 </div><!--end container-->
+
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script>
+  var resumeDiv = $('#resume');
+
+  //resumeDiv.hide()
+  resumeDiv.load('resume-copy.html');
+  /*$('.resume-link').toggle(
+  function () {
+    mainTitle.fadeOut();
+    resumeDiv.fadeIn();
+  },
+  function () {
+    resumeDiv.fadeOut();
+    mainTitle.fadeIn();
+  });*/
+</script>
 
 </body>
 
