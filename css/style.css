@@ -13,12 +13,13 @@
 }
 
 html {
-  background: url("../images/pdx_bg_1024.jpg") no-repeat center center fixed;
+  background:gray;
+  /*background: url("../images/pdx_bg_1024.jpg") no-repeat center center fixed;
   -webkit-background-size:cover;
   -moz-background-size:cover;
   -ms-background-size:cover;
   -o-background-size:cover;
-  background-size:cover;
+  background-size:cover;*/
 }
 
 body {
@@ -59,6 +60,14 @@ h3 {
 
 .resume-link, .portfolio {
   text-decoration:underline;
+  cursor:pointer;
+}
+
+.resume-exit {
+  float:right;
+  cursor:pointer;
+  font-size:20px;
+  padding:5px;
 }
 
 #nav {
@@ -88,44 +97,29 @@ h3 {
   background-position:0 -40px;
 }
 
-.facebook {
-  background: url("../images/fb_icon.png") no-repeat;
-}
-
-.github {
-  background: url("../images/gh_icon.png") no-repeat;
-}
-
-.twitter {
-  background: url("../images/tw_icon.png") no-repeat;
-}
-
-.email {
-  background: url("../images/gm_icon.png") no-repeat;
-}
+/*button background images*/
+.facebook {background: url("../images/fb_icon.png") no-repeat;}
+.github {background: url("../images/gh_icon.png") no-repeat;}
+.twitter {background: url("../images/tw_icon.png") no-repeat;}
+.email {background: url("../images/gm_icon.png") no-repeat;}
 
 #resume {
-  width:800px;
+  width:700px;
   border-radius:50px;
-  padding:15px;
-  margin:20px auto;
-  background:white;
+  padding:15px 30px;
+  margin:40px auto;
+  background:#fff;
+  font-family:Calibri,arial;
+  font-size:11pt;
 }
 
-@media screen and (max-width: 480px) {
-    body {
-      padding:10px;
-    }
-    #container {
-      position:static;
-      margin:200px 0 40px 0;
-      width:100%;
-      font-size:60%;
-    }
-
-    #nav {
-      top:10px;
-      left:50px;
-    }
-
-}
+/*resume css*/
+.header1{text-align:center;font-weight:bold;font-size:26pt}
+.head{text-align:center;font-weight:bold;}
+.title{font-size:12pt;font-weight:bold}
+p.contact{margin-left:35px;}
+.expand:hover{text-decoration:underline;cursor:pointer;}
+.italic{font-style:italic;}
+.bold{font-weight:bold}
+#resume li{padding-left:0pt;margin-left:25pt;font-size:11pt;}
+/*end resume css*/
