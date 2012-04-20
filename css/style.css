@@ -59,6 +59,10 @@ h3 {
   cursor:pointer;
 }
 
+.resume-link:hover, .portfolio:hover {
+  color:gray;
+}
+
 .resume-exit {
   float:right;
   cursor:pointer;
