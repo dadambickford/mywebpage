@@ -54,7 +54,7 @@ h3 {
   padding:3px 0 0 45px;
 }
 
-.resume-link, .portfolio-link {
+.resume-link, .portfolio-link, .expand:hover {
   text-decoration:underline;
   cursor:pointer;
 }
@@ -115,14 +115,13 @@ h3 {
   font-size:11pt;
 }
 
-/*resume css*/
-.header1{text-align:center;font-weight:bold;font-size:26pt}
+/*resume css copied over*/
+.header1{text-align:center;font-weight:bold;font-size:26pt;font-family:trajanpro;}
 .head{text-align:center;font-weight:bold;}
-.title{font-size:12pt;font-weight:bold}
+.title{font-size:12pt;font-weight:bold;font-family:trajanpro;}
 p.contact{margin-left:35px;}
-.expand:hover{text-decoration:underline;cursor:pointer;}
 .italic{font-style:italic;}
-.bold{font-weight:bold}
+.bold{font-weight:bold;}
 #resume li{padding-left:0pt;margin-left:25pt;font-size:11pt;}
 /*end resume css*/
 
@@ -141,7 +140,17 @@ p.contact{margin-left:35px;}
   font-size:2em;
 }
 
-.comingsoon {
-  margin:250px 0;
+#portfolio ul{
   text-align:center;
+  text-indent:-10px;
+  margin-top:10px;
+}
+
+#portfolio li {
+  display:inline;
+  margin:0 21px;
+}
+
+#portfolio img {
+  border:2px solid #ccc;
 }

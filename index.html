@@ -86,7 +86,7 @@
 
     <p class="title expand">PROFESSIONAL CONTACTS <span class="plus">+</span></p>
     <ul class="contact">
-      <br /><p class="title bold">References Available Upon Request.</p>
+      <br /><p class="bold">References Available Upon Request.</p>
       <br /><p class="title bold">P.S. +</p>
       <p>I am Trade Act Certified! Meaning that if you hire me as an On-The-Job Trainee,</p>
       <p>The Trade Act will:</p>
@@ -94,10 +94,28 @@
       <li>help cover costs if I need to relocate to work for you.</li>
     </ul><br />
   </div><!--end resume-->
+  
   <div id="portfolio">
     <span class="portfolio-exit">X</span>
-    <h1>Portfolio</h1>
-    <h2 class="comingsoon">Coming Soon.</h2>
+    <h1>Portfolio (work in progress)</h1><!--height for css sprites - 288px total, 144 for the sprite-->
+    <br />
+    <ul>
+      <li><a href="http://dadambickford.github.com/kantor-slice/"><img title="Kantor.pl" src="images/kantor_thumb.jpg" /></a></li>
+      <li><a href="http://dadambickford.github.com/orange-slice-w-sprites/"><img title="Orange" src="images/orange_thumb.jpg" /></a></li>
+      <li><a href="http://dadambickford.github.com/kantor-slice/"><img title="Kantor.pl" src="images/kantor_thumb.jpg" /></a></li>
+    </ul>
+    <br />
+    <ul>
+      <li><a href="http://dadambickford.github.com/kantor-slice/"><img title="Kantor.pl" src="images/kantor_thumb.jpg" /></a></li>
+      <li><a href="http://dadambickford.github.com/kantor-slice/"><img title="Kantor.pl" src="images/kantor_thumb.jpg" /></a></li>
+      <li><a href="http://dadambickford.github.com/kantor-slice/"><img title="Kantor.pl" src="images/kantor_thumb.jpg" /></a></li>
+    </ul>
+    <br />
+    <ul>
+      <li><a href="http://dadambickford.github.com/kantor-slice/"><img title="Kantor.pl" src="images/kantor_thumb.jpg" /></a></li>
+      <li><a href="http://dadambickford.github.com/kantor-slice/"><img title="Kantor.pl" src="images/kantor_thumb.jpg" /></a></li>
+      <li><a href="http://dadambickford.github.com/kantor-slice/"><img title="Kantor.pl" src="images/kantor_thumb.jpg" /></a></li>
+    </ul>
   </div><!--end portfolio-->
 </div><!--end container-->
 
@@ -139,21 +157,21 @@
 
   resumeLink.on('click', function(){
     main.fadeOut();
-    resumeDiv.fadeIn();
+    resumeDiv.slideDown();
   });
 
   resumeExit.on('click', function(){
-    resumeDiv.fadeOut();
+    resumeDiv.slideUp();
     main.fadeIn();
   });
 
   portLink.on('click', function(){
     main.fadeOut();
-    portDiv.fadeIn();
+    portDiv.slideDown();
   });
 
   portExit.on('click', function(){
-    portDiv.fadeOut();
+    portDiv.slideUp();
     main.fadeIn();
   });
 </script>
