@@ -181,6 +181,10 @@ p.contact{margin-left:35px;}
   font-size:2em;
 }
 
+.wip {
+  font-size:20px;
+}
+
 #portfolio h4, #portfolio h5 {
   font-family:helvetica;
   font-weight:bold;
