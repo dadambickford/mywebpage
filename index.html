@@ -48,7 +48,7 @@
       <a href="mailto:Adam@Adambickford.net" title="Contact me via E-mail!" class ="email"></a>
     </div><!--end nav-->
   </div><!--end main-->
-  <div id="resume">
+  <div id="resume" class="hide">
     <span class="resume-exit">X</span>
     <h1 class="header1">Adam Bickford</h1>
     <p class="head">240 E Gloucester - Gladstone, OR 97027</p>
@@ -101,11 +101,11 @@
     </ul><br />
   </div><!--end resume-->
   
-  <div id="portfolio">
+  <div id="portfolio" class="hide">
     <span class="portfolio-exit">X</span>
     <h1>Portfolio <span class="wip">(work in progress)</span></h1>
     <br />
-    <ul>
+    <ul><!--start first row of portfolio-->
       <li>
         <div class="overlay">
           <div class="details">
@@ -127,17 +127,26 @@
       <li>
         <div class="overlay">
           <div class="details">
-            <h4>Kantor.pl</h4>
-            <h5>Template Slice</h5>
+            <h4>Choose LA County Tumblr Theme</h4>
+            <h5>chooselacounty.tumblr.com</h5>
           </div>
-        <a href="http://dadambickford.github.com/kantor-slice/" target="_blank"><img title="Kantor.pl" src="images/kantor_thumb.jpg" /></a>
+        <a href="http://chooselacounty.tumblr.com" target="_blank"><img title="Choose LA County" src="images/chooselacounty_thumb.png" /></a>
         </div>
       </li>
     </ul>
 
     <br />
     
-    <ul>
+    <ul><!--start second row of portfolio-->
+      <li>
+        <div class="overlay">
+          <div class="details">
+            <h4>Kantor.pl</h4>
+            <h5>Template Slice</h5>
+          </div>
+        <a href="http://dadambickford.github.com/kantor-slice/" target="_blank"><img title="Kantor.pl" src="images/kantor_thumb.jpg" /></a>
+        </div>
+      </li>
       <li>
         <div class="overlay">
           <div class="details">
@@ -156,6 +165,12 @@
         <a href="http://dadambickford.github.com/Nkez-slice/" target="_blank"><img title="Kezarth.net" src="images/nkez_thumb.jpg" /></a>
         </div>
       </li>
+
+    </ul>
+    
+    <br />
+    
+    <ul><!--start third row of portfolio-->
       <li>
         <div class="overlay">
           <div class="details">
@@ -164,13 +179,7 @@
           </div>
         <a href="http://dadambickford.github.com/orange-slice/" target="_blank"><img title="Orange" src="images/orange_thumb.jpg" /></a>
         </div>
-
       </li>
-    </ul>
-    
-    <br />
-    
-    <ul>
       <li>
         <div class="overlay">
           <div class="details">
@@ -189,24 +198,16 @@
         <a href="#"><img title="Coming Soon!" src="images/coming_soon_thumb.png" /></a>
         </div>
       </li>
-      <li>
-        <div class="overlay">
-          <div class="details">
-            <h4>More Coming Soon!</h4>
-            <h5></h5>
-          </div>
-        <a href="#"><img title="Coming Soon!" src="images/coming_soon_thumb.png" /></a>
-        </div>
-      </li>
     </ul>
     
   </div><!--end portfolio-->
 </div><!--end container-->
 
-
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 <script>
-  $(".edu, .contact, #resume, #portfolio").hide();
+  $('.edu, .contact, #resume, #portfolio').hide();//hide the necessary elements
+  $('#resume, #portfolio').removeClass('hide');//remove the hide class so the elements return to the correct position
+  //this hide class is to get rid of the split second that you see the resume and portfolio, between it being loaded in the DOM and jQuery grabbing and hiding it. if i place it way off screen, hide it with jQuery, then remove the class, it loads off screen then returns to the correct position after jQuery hides it.
 
   var expand     = $(".expand"),
       plus       = $("span.plus"),
@@ -222,7 +223,7 @@
       portExit   = $('.portfolio-exit');
 
   var mySlide = function(expand, content, content2, content3, plus, plus2, plus3){ //creates the resume sliding.
-    expand.on('click', function(){
+    expand.on('click', function(){//- i feel like this function is ugly with so many params, note to self to rework this
       content.slideDown();
       content2.slideUp();
       content3.slideUp();
@@ -238,22 +239,22 @@
 
   mySlide(expand.eq(2), contact, work, edu, plus.eq(2), plus.eq(0), plus.eq(1)); //  /
 
-  resumeLink.on('click', function(){
+  resumeLink.on('click', function(){  // these 4 click handlers...
     main.fadeOut();
     resumeDiv.slideDown();
   });
 
-  resumeExit.on('click', function(){
+  resumeExit.on('click', function(){  //  pertain the the resume...
     resumeDiv.slideUp();
     main.fadeIn();
   });
 
-  portLink.on('click', function(){
+  portLink.on('click', function(){  //   and portfolio...
     main.fadeOut();
     portDiv.slideDown();
   });
 
-  portExit.on('click', function(){
+  portExit.on('click', function(){  //  open/close functionality
     portDiv.slideUp();
     main.fadeIn();
   });
