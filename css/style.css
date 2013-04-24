@@ -21,7 +21,6 @@ html, body, #background, #container {
 }
 
 body {
-  /*background: url("../images/pdx_bg_1024.jpg") no-repeat center center fixed;*/
   font-family: TrajanPro, times, verdana;
   color:black;
 }
@@ -37,7 +36,7 @@ body {
   position:absolute;
   bottom:150px;
   left:20px;
-  z-index:2;
+  z-index:1;
   background:white;
   border:white;
   border-radius:50px;

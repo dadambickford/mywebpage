@@ -2,15 +2,14 @@
 <html>
 <head>
 	<meta name="google-site-verification" content="UwAUKGdfExpI4q6heZmrB3LHEkV1jnNdnabCZAH-hCg" />
-  <meta name="keywords"    content="adam, bickford, front, end, web, website, internet, code, developer, designer, portland, oregon, or, html, css, javascript, js, jquery, git, github">
+  <meta name="keywords"    content="adam, bickford, front, end, web, website, internet, code, developer, designer, portland, oregon, or, html, html5, css3, css, javascript, js, jquery, git, github, chrome, ie, firefox, opera, safari , bugs, cross-browser">
   <meta name="description" content="I am a freelance front-end developer from Portland, Or.">
   <title>Adam Bickford | Front-end Engineer</title>
   <link rel="stylesheet" type="text/css" href="css/reset.css" />
   <link rel="stylesheet" type="text/css" href="css/style.css" />
-  <!-- SKIPPING MOBILE SUPPORT FOR NOW
+  <!-- Mobile Support on HOLD - FIX THIS SHIT. DO IT. AT LEAST FIX THE RESPONSIVE LAYOUT FOR BROWSERS.
   <link rel="stylesheet" type="text/css" media="screen and (min-device-height: 700px)" href="css/style.css" />
   <link rel="stylesheet" type="text/css" media="screen and (max-device-height: 699px) and (max-device-width: 699px)" href="css/mobile.css" />
-  trying to target iphones with the retina display, not working right now
   <link rel='stylesheet' href='css/mobile.css' media='only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2)' />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
   -->
@@ -35,7 +34,7 @@
 <div id="container">
   <div id="main">
   <h1>Adam Bickford</h1>
-  <h2>I make kick-ass <span class="portfolio-link" title="check out my Portfolio!">websites</span>.</h2>
+  <h2>I <span class="portfolio-link" title="check out my Portfolio!">create.</span></h2>
   <h3>HTML/CSS/JS/jQuery/Git/<span class="resume-link" title="check out my Resume!">resume</span></h3>
     <div id="nav">
       <a href="http://facebook.com/adamGbickford" title="Contact me on Facebook!" class="facebook"></a>
@@ -49,12 +48,14 @@
     <span class="resume-exit">X</span>
     <h1 class="header1">Adam Bickford</h1>
     <p class="head">Milwaukie, OR 97267</p>
-    <p class="head">(971) 340-7422 (cell) - adam at adambickford.net</p><br />
+    <p class="head"><span id="number"></span> - adam at adambickford.net</p><br />
     <hr>
-    <p><strong>I'm a quick learner, and a hard worker, seeking a junior position in a company that will give me challenging and diverse obstacles, allowing me to utilize and further my skills in web development and design.</strong></p>
+    <p><strong>I'm a quick learner, seeking a junior position in a company that will give me challenging and diverse obstacles, allowing me to utilize and further my skills in web development and design.</strong></p>
     <br />
 
-    <p class="title expand">WORK EXPERIENCE <span class="plus">-</span></p><!--you can thank google docs for all the &nbsp;-->
+<!-- GET RID OF THIS GOOGLE DOCS &NBSP; BULL. SHIT. -->
+
+    <p class="title expand">WORK EXPERIENCE <span class="plus">-</span></p>
     <p class="work"><br /><span class="title">Adam Bickford Web Development:</span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2011 - Present</span></p>
     <ul class="work">
       <li>Designed company websites using HTML and CSS.</li>
@@ -63,7 +64,7 @@
       <li>Gained experience with IE bug hunting and common fixes.</li>
       <li>Furthered skills in HTML5, CSS3, jQuery, and JavaScript.</li>
     </ul><br />
-    <p class="work"><span class="title">MEMC:</span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Feb. 2011 - Dec. 2011&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Portland, Or.</span></p>
+    <p class="work"><span class="title">MEMC:</span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Feb. 2011 - Present&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Portland, Or.</span></p>
     <ul class="work">
       <p class="italic">Turn Team Member</p>
       <li>Performed regular maintenance and mechanical work on solar furnaces.</li>
@@ -85,6 +86,7 @@
       <br />
       <li>100% JavaScript course and project completion on <a target="_blank" href="http://www.codecademy.com/profiles/adam_bickford">CodeAcademy.com</a>.</li>
       <li>Completed the "30 Days to Learn jQuery" course on Tuts+ Premium, with Jeffrey Way.</li>
+      <li>Something new everyday</li>
     </ul><br />
 
     <p class="title expand">PROFESSIONAL CONTACTS <span class="plus">+</span></p>
@@ -95,9 +97,18 @@
   
   <div id="portfolio" class="hide">
     <span class="portfolio-exit">X</span>
-    <h1>Portfolio <span class="wip">(work in progress)</span></h1>
+    <h1>Portfolio <span class="wip">(A constant work in progress)</span></h1>
     <br />
     <ul><!--start first row of portfolio-->
+      <li>
+        <div class="overlay">
+          <div class="details">
+            <h4>Epic Editor</h4>
+            <h5>epiceditor.com</h5>
+          </div>
+        <a href="http://www.epiceditor.com/" target="_blank"><img title="Epic Editor" src="images/homs_thumb.jpg" /></a>
+        </div>
+      </li>
       <li>
         <div class="overlay">
           <div class="details">
@@ -116,6 +127,11 @@
         <a href="http://shwingdaddies.com" target="_blank"><img title="The Shwing Daddies" src="images/shwingdaddies_thumb.jpg" /></a>
         </div>
       </li>
+    </ul>
+
+    <br />
+    
+    <ul><!--start second row of portfolio-->
       <li>
         <div class="overlay">
           <div class="details">
@@ -125,11 +141,6 @@
         <a href="http://alternative-security.net" target="_blank"><img title="Alternative Security" src="images/alternative_thumb.jpg" /></a>
         </div>
       </li>
-    </ul>
-
-    <br />
-    
-    <ul><!--start second row of portfolio-->
       <li>
         <div class="overlay">
           <div class="details">
@@ -148,6 +159,11 @@
         <a href="http://dadambickford.github.com/company-slice/" target="_blank"><img title="Company" src="images/company_thumb.jpg" /></a>
         </div>
       </li>
+    </ul>
+    
+    <br />
+    
+    <ul><!--start third row of portfolio-->
       <li>
         <div class="overlay">
           <div class="details">
@@ -157,12 +173,6 @@
         <a href="http://dadambickford.github.com/Nkez-slice/" target="_blank"><img title="Kezarth.net" src="images/nkez_thumb.jpg" /></a>
         </div>
       </li>
-
-    </ul>
-    
-    <br />
-    
-    <ul><!--start third row of portfolio-->
       <li>
         <div class="overlay">
           <div class="details">
@@ -181,17 +191,8 @@
         <a href="http://dadambickford.github.com/kantor-slice/" target="_blank"><img title="Kantor.pl" src="images/kantor_thumb.jpg" /></a>
         </div>
       </li>
-      <li>
-        <div class="overlay">
-          <div class="details">
-            <h4>Unicove Coupon Flyer</h4>
-            <h5>Print Design</h5>
-          </div>
-        <a href="images/unicove_coupon.jpg" target="_blank"><img title="Unicove Coupon" src="images/coupon_thumb.jpg" /></a>
-        </div>
-      </li>
     </ul>
-    
+
   </div><!--end portfolio-->
 </div><!--end container-->
 
@@ -199,34 +200,37 @@
 <script>
   $('.edu, .contact, #resume, #portfolio').hide();//hide the necessary elements
   $('#resume, #portfolio').removeClass('hide');//remove the hide class so the elements return to the correct position
+
   //this hide class is to get rid of the split second that you see the resume and portfolio, between it being loaded in the DOM and jQuery grabbing and hiding it. if i place it way off screen, hide it with jQuery, then remove the class, it loads off screen then returns to the correct position after jQuery hides it.
 
-  var expand     = $(".expand"),
-      plus       = $("span.plus"),
-      work       = $(".work"),
-      edu        = $(".edu"),
-      contact    = $(".contact"),
-      main       = $("#main"),
-      resumeDiv  = $("#resume"),
-      resumeLink = $(".resume-link"),
-      resumeExit = $(".resume-exit"),
+  var expand     = $('.expand'),
+      plus       = $('span.plus'),
+      num        = $('#number'),
+      work       = $('.work'),
+      edu        = $('.edu'),
+      contact    = $('.contact'),
+      main       = $('#main'),
+      resumeDiv  = $('#resume'),
+      resumeLink = $('.resume-link'),
+      resumeExit = $('.resume-exit'),
       portDiv    = $('#portfolio'),
       portLink   = $('.portfolio-link'),
       portExit   = $('.portfolio-exit');
 
-  var mySlide = function(expand, content1, content2, content3, plus1, plus2, plus3){
-  //creates the resume sliding. - reduce params?
-    expand.on('click', function(){
-      content1.slideDown();
-      content2.slideUp();
-      content3.slideUp();
-      plus1.text('-');
-      plus2.text('+');
-      plus3.text('+');
+num.append('(971)'+'-340'+'-7422');
+
+  var mySlide = function(e, a, b, c, x, y, z){
+  //creates the resume sliding.
+    e.on('click', function(){
+      a.slideDown();
+      b.slideUp();
+      c.slideUp();
+      x.text('-');
+      y.text('+');
+      z.text('+');
     })
   }
-
-  //call on resume elements
+  //calls the resume sliding.
   mySlide(expand.eq(0), work, edu, contact, plus.eq(0), plus.eq(1), plus.eq(2));
 
   mySlide(expand.eq(1), edu, work, contact, plus.eq(1), plus.eq(0), plus.eq(2));
@@ -238,20 +242,23 @@
     resumeDiv.slideDown();
   });
 
-  resumeExit.on('click', function(){  //  pertain to the resume...
-    resumeDiv.slideUp();
-    main.fadeIn();
-  });
+  resumeExit.on('click', function(){  //  ...pertain to the resume...
+   resumeDiv.slideUp();
+   main.fadeIn();
+ });
 
-  portLink.on('click', function(){  //   and portfolio...
+  portLink.on('click', function(){  //   ...and portfolio...
     main.fadeOut();
     portDiv.slideDown();
   });
 
-  portExit.on('click', function(){  //  open/close functionality
-    portDiv.slideUp();
-    main.fadeIn();
-  });
+  portExit.on('click', function(){  //  ...open/close functionality
+  portDiv.slideUp();
+  main.fadeIn();
+});
+
+// ADD SCRIPT TO EXIT RESUME/PORTFOLIO UPON CLICKING THE BACKGROUND AREA OUTSIDE THE RESUME/PORTFOLIO
+
 </script>
 </body>
 </html>
