@@ -94,7 +94,7 @@
       <br /><p class="bold">References Available Upon Request.</p>
     </ul><br />
   </div><!--end resume-->
-  
+
   <div id="portfolio" class="hide">
     <span class="portfolio-exit">X</span>
     <h1>Portfolio <span class="wip">(A constant work in progress)</span></h1>
@@ -130,7 +130,7 @@
     </ul>
 
     <br />
-    
+
     <ul><!--start second row of portfolio-->
       <li>
         <div class="overlay">
@@ -160,9 +160,9 @@
         </div>
       </li>
     </ul>
-    
+
     <br />
-    
+
     <ul><!--start third row of portfolio-->
       <li>
         <div class="overlay">
@@ -230,12 +230,14 @@ num.append('(971)'+'-340'+'-7422');
       z.text('+');
     })
   }
-  //calls the resume sliding.
-  mySlide(expand.eq(0), work, edu, contact, plus.eq(0), plus.eq(1), plus.eq(2));
 
-  mySlide(expand.eq(1), edu, work, contact, plus.eq(1), plus.eq(0), plus.eq(2));
 
-  mySlide(expand.eq(2), contact, work, edu, plus.eq(2), plus.eq(0), plus.eq(1)); 
+  var portClose = function(){
+    portDiv.slideUp();
+    main.fadeIn();
+  };
+
+
 
   resumeLink.on('click', function(){  // these 4 click handlers...
     main.fadeOut();
@@ -252,10 +254,13 @@ num.append('(971)'+'-340'+'-7422');
     portDiv.slideDown();
   });
 
-  portExit.on('click', function(){  //  ...open/close functionality
-  portDiv.slideUp();
-  main.fadeIn();
-});
+  portExit.on('click', portClose);
+
+  $('body').on('keypress', function(e){
+    //(e.keyCode === 27){
+      console.log(e.keyCode);
+    //}
+  });
 
 // ADD SCRIPT TO EXIT RESUME/PORTFOLIO UPON CLICKING THE BACKGROUND AREA OUTSIDE THE RESUME/PORTFOLIO
 
