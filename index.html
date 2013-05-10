@@ -231,39 +231,70 @@ num.append('(971)'+'-340'+'-7422');
     })
   }
 
+  var portOpen = function(){
+    main.fadeOut();
+    portDiv.slideDown(function(){
+      $(document).trigger('portfolio.open');
+    });
+  };
 
   var portClose = function(){
     portDiv.slideUp();
     main.fadeIn();
+    $(document).trigger('portfolio.close');
   };
 
-
-
-  resumeLink.on('click', function(){  // these 4 click handlers...
-    main.fadeOut();
-    resumeDiv.slideDown();
+  $(document).on('portfolio.open', function(){
+    $(document).on('click.portfolio', function(e){
+      if($(e.target).closest('#portfolio').length === 0){
+        portClose();
+      }
+    });
   });
 
-  resumeExit.on('click', function(){  //  ...pertain to the resume...
-   resumeDiv.slideUp();
-   main.fadeIn();
- });
-
-  portLink.on('click', function(){  //   ...and portfolio...
-    main.fadeOut();
-    portDiv.slideDown();
+  $(document).on('portfolio.close', function(){
+    $(document).off('click.portfolio');
   });
+
+  var resumeOpen = function(){
+    main.fadeOut();
+    resumeDiv.slideDown(function(){
+      $(document).trigger('resume.open');
+    });
+  };
+
+  var resumeClose = function(){
+    resumeDiv.slideUp();
+    main.fadeIn();
+    $(document).trigger('resume.close');
+  };
+
+  $(document).on('resume.open', function(){
+    $(document).on('click.resume', function(e){
+      if($(e.target).closest('#resume').length === 0){
+        resumeClose();
+      }
+    });
+  });
+
+  $(document).on('resume.close', function(){
+    $(document).off('click.resume');
+  });
+
+  resumeLink.on('click', resumeOpen);
+
+  resumeExit.on('click', resumeClose);
+
+  portLink.on('click', portOpen);
 
   portExit.on('click', portClose);
 
-  $('body').on('keypress', function(e){
-    //(e.keyCode === 27){
-      console.log(e.keyCode);
-    //}
+  $(document).on('keyup', function(e){
+    if(e.keyCode === 27){
+      portClose();
+      resumeClose();
+    }
   });
-
-// ADD SCRIPT TO EXIT RESUME/PORTFOLIO UPON CLICKING THE BACKGROUND AREA OUTSIDE THE RESUME/PORTFOLIO
-
 </script>
 </body>
 </html>
