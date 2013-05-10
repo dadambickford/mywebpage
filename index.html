@@ -231,6 +231,10 @@ num.append('(971)'+'-340'+'-7422');
     })
   }
 
+mySlide(expand.eq(1), edu, work, contact, plus.eq(1), plus.eq(0), plus.eq(2));
+mySlide(expand.eq(0), work, edu, contact, plus.eq(0), plus.eq(1), plus.eq(2));
+mySlide(expand.eq(2), contact, edu, work, plus.eq(2), plus.eq(0), plus.eq(1));
+
   var portOpen = function(){
     main.fadeOut();
     portDiv.slideDown(function(){
