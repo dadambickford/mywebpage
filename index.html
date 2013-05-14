@@ -202,12 +202,7 @@
 
   //this hide class is to get rid of the split second that you see the resume and portfolio, between it being loaded in the DOM and jQuery grabbing and hiding it. if i place it way off screen, hide it with jQuery, then remove the class, it loads off screen then returns to the correct position after jQuery hides it.
 
-  var expand     = $('.expand'),
-      plus       = $('span.plus'),
-      num        = $('#number'),
-      work       = $('.work'),
-      edu        = $('.edu'),
-      contact    = $('.contact'),
+  var num        = $('#number'),
       main       = $('#main'),
       resumeDiv  = $('#resume'),
       resumeLink = $('.resume-link'),
@@ -216,23 +211,69 @@
       portLink   = $('.portfolio-link'),
       portExit   = $('.portfolio-exit');
 
-num.append('(971)'+'-340'+'-7422');
+  num.append('(971)'+'-340'+'-7422');
 
-  var mySlide = function(e, a, b, c, x, y, z){
+  // var mySlide = function(e, a, b, c, x, y, z){
+  // //creates the resume sliding.
+  //   e.on('click', function(){
+  //     a.slideDown();
+  //     b.slideUp();
+  //     c.slideUp();
+  //     x.text('-');
+  //     y.text('+');
+  //     z.text('+');
+  //   });
+  // };
+
+  // mySlide(expand.eq(0), edu, work, contact, plus.eq(0), plus.eq(1), plus.eq(2));
+  // mySlide(expand.eq(1), work, edu, contact, plus.eq(1), plus.eq(2), plus.eq(0));
+  // mySlide(expand.eq(2), contact, edu, work, plus.eq(2), plus.eq(0), plus.eq(1));
+
+  var mySlide = function(e){
   //creates the resume sliding.
-    e.on('click', function(){
-      a.slideDown();
-      b.slideUp();
-      c.slideUp();
-      x.text('-');
-      y.text('+');
-      z.text('+');
-    })
-  }
+    e.button.on('click', function(){
+      e.slide1.slideDown();
+      e.slide2.slideUp();
+      e.slide3.slideUp();
+      e.plus1.text('-');
+      e.plus2.text('+');
+      e.plus3.text('+');
+    });
+  };
 
-mySlide(expand.eq(1), edu, work, contact, plus.eq(1), plus.eq(0), plus.eq(2));
-mySlide(expand.eq(0), work, edu, contact, plus.eq(0), plus.eq(1), plus.eq(2));
-mySlide(expand.eq(2), contact, edu, work, plus.eq(2), plus.eq(0), plus.eq(1));
+  mySlide({
+    button: $('.expand').eq(0),
+    slide1: $('.work'),
+    slide2: $('.edu'),
+    slide3: $('.contact'),
+    plus1: $('.plus').eq(0),
+    plus2: $('.plus').eq(1),
+    plus3: $('.plus').eq(2)
+  });
+
+  mySlide({
+    button: $('.expand').eq(1),
+    slide1: $('.edu'),
+    slide2: $('.work'),
+    slide3: $('.contact'),
+    plus1: $('.plus').eq(1),
+    plus2: $('.plus').eq(0),
+    plus3: $('.plus').eq(2)
+  });
+
+  mySlide({
+    button: $('.expand').eq(2),
+    slide1: $('.contact'),
+    slide2: $('.edu'),
+    slide3: $('.work'),
+    plus1: $('.plus').eq(2),
+    plus2: $('.plus').eq(1),
+    plus3: $('.plus').eq(0)
+  });
+
+
+  // mySlide(expand.eq(1), work, edu, contact, plus.eq(1), plus.eq(2), plus.eq(0));
+  // mySlide(expand.eq(2), contact, edu, work, plus.eq(2), plus.eq(0), plus.eq(1));
 
   var portOpen = function(){
     main.fadeOut();
