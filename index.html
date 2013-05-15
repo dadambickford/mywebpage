@@ -54,44 +54,51 @@
     <p><strong>I'm a quick learner, seeking a junior position in a company that will give me challenging and diverse obstacles, allowing me to utilize and further my skills in web development and design.</strong></p>
     <br />
 
-    <p class="title expand">WORK EXPERIENCE <span class="plus">-</span></p>
-    <p class="work"><br /><span class="title">Adam Bickford Web Development:</span><span class="res-details">2011 - Present</span></p>
-    <ul class="work">
-      <li>Designed company websites using HTML and CSS.</li>
-      <li>Developed web applications using JavaScript.</li>
-      <li>Used Git and GitHub for version control.</li>
-      <li>Gained experience with IE bug hunting and common fixes.</li>
-      <li>Furthered skills in HTML5, CSS3, jQuery, and JavaScript.</li>
-    </ul><br />
-    <p class="work"><span class="title">MEMC:</span><span class="res-details">Feb. 2011 - Present</span><span class="italic res-details">Portland, Or.</span></p>
-    <ul class="work">
-      <p class="italic">Turn Team Member</p>
-      <li>Performed regular maintenance and mechanical work on solar furnaces.</li>
-      <li>Trained as a Super User on our data tracking software.</li>
-      <li>Worked with my team to match work with precise instructions and techinical drawings.</li>
-      <li>Adhered to strict guidelines for working with hazardous chemicals.</li>
-      <li>Trained and certified to work in a class 10,000 clean room.</li><br />
-    </ul>
-
+    <p class="title expand">WORK EXPERIENCE <span class="plus">+</span></p>
+    <div class="content">
+      <p><br /><span class="title">Adam Bickford Web Development:</span><span class="res-details">2011 - Present</span></p>
+      <ul>
+        <li>Designed company websites using HTML and CSS.</li>
+        <li>Developed web applications using JavaScript.</li>
+        <li>Used Git and GitHub for version control.</li>
+        <li>Gained experience with IE bug hunting and common fixes.</li>
+        <li>Furthered skills in HTML5, CSS3, jQuery, and JavaScript.</li>
+      </ul><br />
+      <p><span class="title">MEMC:</span><span class="res-details">Feb. 2011 - Present</span><span class="italic res-details">Portland, Or.</span></p>
+      <ul>
+        <p class="italic">Turn Team Member</p>
+        <li>Performed regular maintenance and mechanical work on solar furnaces.</li>
+        <li>Trained as a Super User on our data tracking software.</li>
+        <li>Worked with my team to match work with precise instructions and techinical drawings.</li>
+        <li>Adhered to strict guidelines for working with hazardous chemicals.</li>
+        <li>Trained and certified to work in a class 10,000 clean room.</li>
+      </ul>
+    </div><!--end work div-->
+<br />
     <p class="title expand">EDUCATION <span class="plus">+</span></p>
-    <ul class="edu">
-      <br /><p>- Gladstone High School<span class="italic res-details">Gladstone, OR</span></p>
-      <br />
-      <li>Completed Adv. Graphic Design, 4 years.</li>
-      <li>Built websites for my band, and my friends.</li>
-      <li>Built PC's in Computer Tech. 2 years.</li>
-      <br />
-      <p>- Web Based Education</p>
-      <br />
-      <li>100% JavaScript course and project completion on <a target="_blank" href="http://www.codecademy.com/profiles/adam_bickford">CodeAcademy.com</a>.</li>
-      <li>Completed the "30 Days to Learn jQuery" course on Tuts+ Premium, with Jeffrey Way.</li>
-      <li>Something new everyday</li>
-    </ul><br />
-
+    <div class="content">
+      <ul>
+        <br /><p>- Gladstone High School<span class="italic res-details">Gladstone, OR</span></p>
+        <br />
+        <li>Completed Adv. Graphic Design, 4 years.</li>
+        <li>Built websites for my band, and my friends.</li>
+        <li>Built PC's in Computer Tech. 2 years.</li>
+        <br />
+        <p>- Web Based Education</p>
+        <br />
+        <li>100% JavaScript course and project completion on <a target="_blank" href="http://www.codecademy.com/profiles/adam_bickford">CodeAcademy.com</a>.</li>
+        <li>Completed the "30 Days to Learn jQuery" course on Tuts+ Premium, with Jeffrey Way.</li>
+        <li>Something new everyday</li>
+      </ul>
+    </div><!--end edu div-->
+<br />
     <p class="title expand">PROFESSIONAL CONTACTS <span class="plus">+</span></p>
-    <ul class="contact">
-      <br /><p class="bold">References Available Upon Request.</p>
-    </ul><br />
+    <div class="content">
+      <ul>
+        <br /><p class="bold">References Available Upon Request.</p>
+      </ul>
+    </div><!--end contact div-->
+    <br />
   </div><!--end resume-->
 
   <div id="portfolio" class="hide">
@@ -195,9 +202,9 @@
   </div><!--end portfolio-->
 </div><!--end container-->
 
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script type="text/javascript" src="jquery-1.9.1.min.js"></script>
 <script>
-  $('.edu, .contact, #resume, #portfolio').hide();//hide the necessary elements
+  $('.content, #resume, #portfolio').hide();//hide the necessary elements
   $('#resume, #portfolio').removeClass('hide');//remove the hide class so the elements return to the correct position
 
   //this hide class is to get rid of the split second that you see the resume and portfolio, between it being loaded in the DOM and jQuery grabbing and hiding it. if i place it way off screen, hide it with jQuery, then remove the class, it loads off screen then returns to the correct position after jQuery hides it.
@@ -213,67 +220,15 @@
 
   num.append('(971)'+'-340'+'-7422');
 
-  // var mySlide = function(e, a, b, c, x, y, z){
-  // //creates the resume sliding.
-  //   e.on('click', function(){
-  //     a.slideDown();
-  //     b.slideUp();
-  //     c.slideUp();
-  //     x.text('-');
-  //     y.text('+');
-  //     z.text('+');
-  //   });
-  // };
-
-  // mySlide(expand.eq(0), edu, work, contact, plus.eq(0), plus.eq(1), plus.eq(2));
-  // mySlide(expand.eq(1), work, edu, contact, plus.eq(1), plus.eq(2), plus.eq(0));
-  // mySlide(expand.eq(2), contact, edu, work, plus.eq(2), plus.eq(0), plus.eq(1));
-
-  var mySlide = function(e){
-  //creates the resume sliding.
-    e.button.on('click', function(){
-      e.slide1.slideDown();
-      e.slide2.slideUp();
-      e.slide3.slideUp();
-      e.plus1.text('-');
-      e.plus2.text('+');
-      e.plus3.text('+');
+  var mySlide = function(){
+    //initiates the resume sliding
+    $('.expand').on('click', function(){
+      $(this).next('.content').slideDown().siblings('.content').slideUp();
+      var selectedPlus = $(this).children('.plus');
+      selectedPlus.text('-');
+      $('.plus').not(selectedPlus).text('+');
     });
-  };
-
-  mySlide({
-    button: $('.expand').eq(0),
-    slide1: $('.work'),
-    slide2: $('.edu'),
-    slide3: $('.contact'),
-    plus1: $('.plus').eq(0),
-    plus2: $('.plus').eq(1),
-    plus3: $('.plus').eq(2)
-  });
-
-  mySlide({
-    button: $('.expand').eq(1),
-    slide1: $('.edu'),
-    slide2: $('.work'),
-    slide3: $('.contact'),
-    plus1: $('.plus').eq(1),
-    plus2: $('.plus').eq(0),
-    plus3: $('.plus').eq(2)
-  });
-
-  mySlide({
-    button: $('.expand').eq(2),
-    slide1: $('.contact'),
-    slide2: $('.edu'),
-    slide3: $('.work'),
-    plus1: $('.plus').eq(2),
-    plus2: $('.plus').eq(1),
-    plus3: $('.plus').eq(0)
-  });
-
-
-  // mySlide(expand.eq(1), work, edu, contact, plus.eq(1), plus.eq(2), plus.eq(0));
-  // mySlide(expand.eq(2), contact, edu, work, plus.eq(2), plus.eq(0), plus.eq(1));
+  }();
 
   var portOpen = function(){
     main.fadeOut();
@@ -339,6 +294,7 @@
       resumeClose();
     }
   });
+
 </script>
 </body>
 </html>
