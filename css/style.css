@@ -31,7 +31,7 @@ body {
 }
 
 #main {
-  height:135px;
+  height:125px;
   width:585px;
   position:absolute;
   bottom:150px;
@@ -44,7 +44,7 @@ body {
 
 h1 {
   font-size:4em;
-  padding:15px 0 0 15px;
+  padding:5px 0 0 15px;
 }
 
 h2 {
@@ -79,7 +79,7 @@ h3 {
 
 #nav {
   height:45px;
-  width:230px;
+  width:226px;
   background:white;
   position:relative;
   left:360px;
@@ -154,8 +154,8 @@ h3 {
 .overlay:hover > .details{margin-left:2px;}
 
 #resume {
-  width:700px;
-  border-radius:50px;
+  width:800px;
+  border-radius:30px;
   padding:15px 30px;
   margin:40px auto;
   background:#fff;
@@ -163,15 +163,43 @@ h3 {
   font-size:11pt;
 }
 
-/*my resume css copied over*/
-.header1{text-align:center;font-weight:bold;font-size:26pt;font-family:trajanpro;}
-.head{text-align:center;font-weight:bold;}
-.title{font-size:12pt;font-weight:bold;font-family:trajanpro;}
-p.contact{margin-left:35px;}
-.italic{font-style:italic;}
-.bold{font-weight:bold;}
-#resume li{padding-left:0pt;margin-left:25pt;font-size:11pt;}
-/*end resume css*/
+/*my resume google docs css copied over*/
+.header1 {
+  text-align:center;
+  font-weight:bold;
+  font-size:26pt;
+  font-family:trajanpro;
+}
+
+.head {
+  text-align:center;
+  font-weight:bold;
+}
+
+.title {
+  font-size:12pt;
+  font-weight:bold;
+  font-family:trajanpro;
+}
+
+p.contact {
+  margin-left:35px;
+}
+
+.italic {
+  font-style:italic;
+}
+
+.bold {
+  font-weight:bold;
+}
+
+#resume li {
+  padding-left:0pt;
+  margin-left:25pt;
+  font-size:11pt;
+}
+/*end google docs resume css*/
 
 .hide {
    position: absolute !important;
@@ -182,7 +210,7 @@ p.contact{margin-left:35px;}
 #portfolio {
   width:800px;
   height:600px;
-  border-radius:50px;
+  border-radius:30px;
   padding:15px 30px;
   margin:40px auto;
   background:#fff;
@@ -207,10 +235,10 @@ p.contact{margin-left:35px;}
   font-size:.8em;
 }
 
-#portfolio ul{
+.portfolio-items {
   text-align:center;
   text-indent:-10px;
-  margin-top:10px;
+  margin:20px 0;
 }
 
 #portfolio li {
@@ -226,4 +254,51 @@ p.contact{margin-left:35px;}
   position:absolute;
   top:-9999px;
   left:-9999px;
+}
+
+@media all and (max-width: 850px)  {
+  ::-webkit-scrollbar {
+    width: 12px;
+  }
+   
+  ::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    border-radius: 10px;
+    margin:35px 0;
+  }
+   
+  ::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+  }
+
+  html, body, #background, #container {
+    min-width:400px;
+    min-height:400px;
+  }
+
+  #resume {
+    width:400px;
+    max-height:80%;
+    overflow-y:scroll;
+  }
+
+  .wip {
+    display:block;
+  }
+
+  #portfolio {
+    width:400px;
+    max-height:80%;
+    overflow-y:scroll;
+  }
+
+  .portfolio-items {
+    margin:0 0 0 85px;
+  }
+
+  #portfolio li {
+    display:block;
+    margin:20px 0;
+  }
 }
