@@ -49,7 +49,7 @@ h1 {
 
 h2 {
   font-size:1.5em;
-  padding:3px 0 0 15px;
+  padding:0 0 3px 15px;
 }
 
 h3 {
@@ -73,14 +73,18 @@ h3 {
   padding:5px;
 }
 
+.res-details {
+  padding-left:60px;
+}
+
 #nav {
-  height:50px;
-  width:244px;
+  height:45px;
+  width:230px;
   background:white;
   position:relative;
   left:360px;
   top:-30px;
-  padding-left:6px;
+  padding-left:8px;
   border:1px solid gray;
   border-radius:25px;
   -webkit-box-shadow: -4px -4px 5px 0 rgba(0, 0, 0, .3);
@@ -91,21 +95,29 @@ h3 {
 #nav a {
   float:left;
   display: block;
-  margin:5px 4px;
-  height:40px;
-  width:40px;
+  margin:7px 6px;
+  height:32px;
+  width:32px;
 }
 
-#nav a:hover {
-  background-position:0 -40px;
+.facebook, .twitter, .github, .instagram, .email {
+  background: url("../images/social_icon_grid.png") no-repeat;
 }
 
-/*button background images*/
-.facebook {background: url("../images/fb_icon.png") no-repeat;}
-.github {background: url("../images/gh_icon.png") no-repeat;}
-.twitter {background: url("../images/tw_icon.png") no-repeat;}
-.instagram {background: url("../images/ig_icon.png") no-repeat;}
-.email {background: url("../images/gm_icon.png") no-repeat;}
+.facebook {background-position:0 -32px;}
+.facebook:hover {background-position:0 0px;}
+
+.github {background-position:-64px -32px;}
+.github:hover {background-position:-64px 0;}
+
+.twitter {background-position:-32px -32px;}
+.twitter:hover {background-position:-32px 0;}
+
+.instagram {background-position:-96px -32px;}
+.instagram:hover {background-position:-96px 0;}
+
+.email {background-position:-128px -32px;}
+.email:hover {background-position:-128px 0;}
 
 .overlay {
   position:relative;
