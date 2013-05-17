@@ -355,7 +355,7 @@ p.contact {
   .email {background-position:-128px 0;}
 }
 
-@media only screen and (max-device-width: 480px) {
+@media only screen and (max-device-width: 720px) {
   @media (orientation: portrait) {
     #main {
       height:175px;
