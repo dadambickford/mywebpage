@@ -31,7 +31,7 @@ body {
 }
 
 #main {
-  height:125px;
+  height:135px;
   width:585px;
   position:absolute;
   bottom:150px;
@@ -44,16 +44,17 @@ body {
 
 h1 {
   font-size:4em;
-  padding:5px 0 0 15px;
+  padding:7px 0 0 15px;
 }
 
 h2 {
-  font-size:1.5em;
-  padding:0 0 3px 15px;
+  font-size:2em;
+  padding:8px 0 0 35px;
 }
 
 h3 {
-  padding:3px 0 0 45px;
+  padding:3px 0 0 17px;
+  letter-spacing:9px;
 }
 
 .resume-link, .portfolio-link, .expand:hover {
@@ -79,11 +80,11 @@ h3 {
 
 #nav {
   height:45px;
-  width:226px;
+  width:247px;
   background:white;
   position:relative;
-  left:360px;
-  top:-30px;
+  left:310px;
+  bottom:30px;
   padding-left:8px;
   border:1px solid gray;
   border-radius:25px;
@@ -93,11 +94,11 @@ h3 {
 }
 
 #nav a {
-  float:left;
-  display: block;
-  margin:7px 6px;
   height:32px;
   width:32px;
+  margin:7px 8px;
+  float:left;
+  display: block;
 }
 
 .facebook, .twitter, .github, .instagram, .email {
@@ -198,6 +199,7 @@ p.contact {
   padding-left:0pt;
   margin-left:25pt;
   font-size:11pt;
+
 }
 /*end google docs resume css*/
 
@@ -256,6 +258,8 @@ p.contact {
   left:-9999px;
 }
 
+/*start responsive css*/
+
 @media all and (max-width: 850px)  {
   ::-webkit-scrollbar {
     width: 12px;
@@ -277,7 +281,7 @@ p.contact {
     min-height:400px;
   }
 
-  #resume {
+  #resume, #portfolio {
     width:400px;
     max-height:80%;
     overflow-y:scroll;
@@ -285,12 +289,6 @@ p.contact {
 
   .wip {
     display:block;
-  }
-
-  #portfolio {
-    width:400px;
-    max-height:80%;
-    overflow-y:scroll;
   }
 
   .portfolio-items {
@@ -301,4 +299,59 @@ p.contact {
     display:block;
     margin:20px 0;
   }
+}
+
+@media all and (max-width: 500px)  {
+  #resume, #portfolio {
+    width:300px;
+  }
+
+  .portfolio-items {
+    margin:0 0 0 35px;
+  }
+}
+
+@media all and (max-width: 600px)  {
+
+  #main {
+    height:200px;
+    width:330px;
+    bottom:100px;
+  }
+
+  h1 {
+    font-size:3.5em;
+    padding:9px 0 0 15px;
+  }
+
+  h2 {
+    font-size:1.5em;
+    padding:8px 0 3px 25px;
+  }
+
+  h3 {
+    font-size:.9em;
+    padding:3px 0 0 20px;
+  }
+
+  #nav {
+    width:200px;
+    left:150px;
+    bottom:25px;
+  }
+
+  #nav a {
+    margin:7px 3px;
+  }
+
+  .tech-shift {
+    display:block;
+    margin:6px 0 0 0;
+  }
+
+  .facebook {background-position:0 0;}
+  .github {background-position:-64px 0;}
+  .twitter {background-position:-32px 0;}
+  .instagram {background-position:-96px 0;}
+  .email {background-position:-128px 0;}
 }
