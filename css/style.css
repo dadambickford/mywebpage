@@ -312,7 +312,6 @@ p.contact {
 }
 
 @media all and (max-width: 600px)  {
-
   #main {
     height:200px;
     width:330px;
@@ -354,4 +353,30 @@ p.contact {
   .twitter {background-position:-32px 0;}
   .instagram {background-position:-96px 0;}
   .email {background-position:-128px 0;}
+}
+
+@media only screen and (max-device-width: 480px) {
+  @media (orientation: portrait) {
+    #main {
+      height:175px;
+      width:300px;
+      bottom:60px;
+    }
+
+    #nav {
+      left:135px;
+      bottom:15px;
+    }
+  }
+  
+  @media (orientation: landscape) {
+    #main {
+      height:115px;
+      bottom:40px;
+    }
+
+    #nav {
+      bottom:0;
+    }
+  }
 }
