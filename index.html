@@ -30,8 +30,8 @@
 <div id="container">
   <div id="main">
   <h1 class="main-title">Adam Bickford</h1>
-  <h3>HTML/CSS<span class="tech-shift-2">/jQuery/</span><span class="tech-shift">JS/Git/<span class="resume-link" title="check out my Resume!">Resume</span></span></h3>
-  <h2>I <span class="portfolio-link" title="check out my Portfolio!">Create.</span></h2>
+  <h3 class="subtitle">Front-end Engineer</h3>
+  <h2>I <span class="portfolio-link" title="check out my Portfolio!">Create</span>.</h2>
     <div id="nav">
       <a href="http://facebook.com/adamGbickford" title="Contact me on Facebook!" class="facebook" target="_blank"></a>
       <a href="https://github.com/dadambickford" title="Contact me on Github!" class="github" target="_blank"></a>
@@ -100,7 +100,8 @@
 
   <div id="portfolio" class="hide">
     <span class="portfolio-exit">X</span>
-    <h1>Portfolio <span class="wip">(A constant work in progress)</span></h1>
+    <h1 class="portfolio-title">Portfolio</h1>
+    <h3>...or you can check out my <span class="resume-link">Resume</span></h3>
     <br />
     <ul class="portfolio-items"><!--start first row of portfolio-->
       <li>
@@ -248,16 +249,21 @@
   });
 
   var resumeOpen = function(){
-    main.fadeOut();
+    portDiv.slideUp(function(){
+      $(document).trigger('portfolio.close')
+    });
     resumeDiv.slideDown(function(){
       $(document).trigger('resume.open');
     });
   };
 
   var resumeClose = function(){
-    resumeDiv.slideUp();
-    main.fadeIn();
-    $(document).trigger('resume.close');
+    resumeDiv.slideUp(function(){
+      $(document).trigger('resume.close');
+    });
+    portDiv.slideDown(function(){
+      $(document).trigger('portfolio.open')
+    });
   };
 
   $(document).on('resume.open', function(){
