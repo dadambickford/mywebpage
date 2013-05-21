@@ -60,13 +60,13 @@ h2 {
   color:#555;
   letter-spacing:2px;
   position:relative;
-  top:2px;
+  top:4px;
   left:245px;
 }
 
 h3.subtitle {
   position:relative;
-  top:19px;
+  top:21px;
   left:52px;
   letter-spacing:1.5px;
   color:#777;
@@ -217,7 +217,7 @@ p.contact {
 
 #portfolio {
   width:800px;
-  height:600px;
+  height:610px;
   border-radius:30px;
   padding:15px 15px 40px 30px;
   margin:40px auto;
@@ -226,7 +226,7 @@ p.contact {
 
 .portfolio-title {
   font-family:AirstreamRegular;
-  margin-bottom:-40px;
+  margin-bottom:-35px;
 }
 
 #portfolio h3 {
