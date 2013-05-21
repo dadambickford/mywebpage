@@ -197,7 +197,9 @@
 
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <script>
-  $('.content, #resume, #portfolio').hide();//hide the necessary elements
+  $('#resume, #portfolio').hide();//hide the necessary elements
+  $('.content').eq(1).hide();
+  $('.content').eq(2).hide();
   $('#resume, #portfolio').removeClass('hide');//remove the hide class so the elements return to the correct position
 
   //this hide class is to get rid of the split second that you see the resume and portfolio, between it being loaded in the DOM and jQuery grabbing and hiding it. if i place it way off screen, hide it with jQuery, then remove the class, it loads off screen then returns to the correct position after jQuery hides it.
@@ -286,12 +288,12 @@
 
   portExit.on('click', portClose);
 
-  $(document).on('keyup', function(e){
-    if(e.keyCode === 27){
-      portClose();
-      resumeClose();
-    }
-  });
+  // $(document).on('keyup', function(e){
+  //   if(e.keyCode === 27){
+  //     portClose();
+  //     resumeClose();
+  //   }
+  // });
 
 </script>
 </body>
