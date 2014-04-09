@@ -5,8 +5,22 @@ body {
   background-image: url(../images/blocks.jpg);
 }
 
+.res-title-small {
+  display: none;
+}
+
+@media (max-width: 450px) {
+  .res-title-normal {
+    display: none;
+  }
+
+  .res-title-small {
+    display: inline;
+  }
+}
+
 .first-name, .last-name {
-  font-size: 2.7em;
+  font-size: 2.1em;
   font-weight: lighter;
 }
 
@@ -18,7 +32,7 @@ body {
 .last-name {
   display: inline-block;
   float: right;
-  margin: -5px 0 20px 0;
+  margin: -1px 0 20px 0;
 }
 
 .links {
@@ -29,7 +43,7 @@ main {
   box-sizing: border-box;
   width: 70%;
   color: #565D64;
-  font-size: 1.2em;
+  font-size: 1.1em;
   background-color: #fff;
   margin: 10% auto;
   border-radius: 15px;
@@ -41,6 +55,6 @@ main a {
 }
 
 .about-me {
-  padding: 0 40px;
+  padding: 0 30px;
   line-height: 1.2em;
 }
