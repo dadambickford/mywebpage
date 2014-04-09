@@ -3,49 +3,63 @@ body {
   font-family: helvetica;
   background-image: url(../images/blocks.jpg);
 }
-.res-title-small {
-  display: none;
+.top-bar {
+  background-color: #fcfcfc !important; /*gross but needed to override pure.css*/
+  border-bottom: 3px outset #D8D8D8 !important; /*gross but needed to override pure.css*/
 }
-
-@media (max-width: 450px) {
-  .res-title-normal {
-    display: none;
-  }
-
-  .res-title-small {
-    display: inline;
-  }
-}
-.first-name, .last-name {
-  font-size: 2.1em;
-  font-weight: lighter;
-}
-.first-name {
-  margin-bottom: -5px;
-  padding-top: 20px;
-}
-.last-name {
-  display: inline-block;
-  float: right;
-  margin: -1px 0 20px 0;
+.title {
+  margin-top: 3px !important; /*gross but needed to override pure.css*/
 }
 .links {
   float: right;
 }
+.res-title-small {
+  display: none;
+}
+.first-name, .last-name {
+  font-size: 2.1em;
+  font-weight: lighter;
+  color: #D8D8D8;
+}
+.first-name {
+  margin: 15px 0 -5px 0;
+}
+.last-name {
+  display: inline-block;
+  float: right;
+  margin: -5px 0 20px 0;
+}
 main {
   box-sizing: border-box;
-  width: 70%;
+  width: 90%;
+  max-width: 800px;
   color: #565D64;
   font-size: 1.1em;
-  background-color: #fff;
+  background-color: #fcfcfc;
   margin: 10% auto;
-  border-radius: 15px;
+  border: 3px outset #D8D8D8;
   padding: 0 20px;
 }
 main a {
+  color: #444;
   text-decoration: underline;
 }
 .about-me {
   padding: 0 30px;
-  line-height: 1.2em;
+  line-height: 1.4em;
+}
+/*some extra responsiveness*/
+@media (max-width: 450px) {
+  .res-title-normal {
+    display: none;
+  }
+  .res-title-small {
+    display: inline;
+  }
+  .links li a {
+    margin: 0px -10px !important; /*gross but needed to override pure.css*/
+  }
+  main {
+    padding: 0 10px;
+  }
 }
