@@ -40,6 +40,13 @@
     <h1 class="last-name">&lt;/bickford&gt;</h1>
     <br class="clear-fix" />
   </main>
+<script type="text/javascript">
+  //snippet to disable mobile scrolling?
+  document.addEventListener('touchstart', this.touchstart);
+  document.addEventListener('touchmove', this.touchmove);
+  function touchstart(e) {e.preventDefault()}
+  function touchmove(e) {e.preventDefault()}
+</script>
 </body>
 </html>
 <!-- Only the dead have nothing left to learn. - Anonymous -->
