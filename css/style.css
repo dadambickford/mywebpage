@@ -1,5 +1,45 @@
-/*Starting fresh fucko*/
+/*Starting fresh*/
 
 body {
+  font-family: helvetica;
   background-image: url(../images/blocks.jpg);
+}
+
+.first-name, .last-name {
+  font-size: 3em;
+  font-weight: lighter;
+}
+
+.first-name {
+  margin-bottom: -5px;
+  padding-top: 20px;
+}
+
+.last-name {
+  margin-top: -5px;
+  padding-bottom: 20px;
+}
+
+.links {
+  float: right;
+}
+
+main {
+  box-sizing: border-box;
+  width: 70%;
+  color: #565D64;
+  font-size: 1.2em;
+  background-color: #fff;
+  margin: 10% auto;
+  border-radius: 15px;
+  padding: 0 20px;
+}
+
+main a {
+  text-decoration: underline;
+}
+
+.about-me {
+  padding: 0 40px;
+  line-height: 1.2em;
 }
