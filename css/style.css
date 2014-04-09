@@ -1,7 +1,9 @@
 /*Starting fresh*/
+/*TODO: Customize Pure.css to get rid of these !importants*/
 body {
   font-family: helvetica;
   background-image: url(../images/blocks.jpg);
+  overflow-x: hidden; 
 }
 .top-bar {
   background-color: #fcfcfc !important; /*gross but needed to override pure.css*/
@@ -56,8 +58,9 @@ main a {
   .res-title-small {
     display: inline;
   }
-  .links li a {
-    margin: 0px -10px !important; /*gross but needed to override pure.css*/
+  .links li:nth-child(1) {
+    /*needed for the damn contacts wrapping around on iPhone's puny screens*/
+    margin: 0 -15px !important; /*gross but needed to override pure.css*/
   }
   main {
     padding: 0 10px;
